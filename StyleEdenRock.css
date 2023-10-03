@@ -1,0 +1,18 @@
+#album{
+    background: linear-gradient(#d1e3f0,#99b7b4,#e2e8e0,#859268,#465836,#2a3b31,rgb(32, 31, 31));
+}
+#album h2{
+    color:#2a3b31;
+}
+
+#album button{
+    background: linear-gradient(#d1e3f0,#859268,#2a3b31);
+    color: #2a3b31;  
+    border: outset #2a3b31;      
+}
+
+#bloccoImg {
+  border-right: 2px solid transparent;
+  border-image: linear-gradient(to bottom,rgb(32, 31, 31),#2a3b31,#465836,#859268,#d1e3f0,#e2e8e0,#99b7b4,#e2e8e0,#859268,#465836,#2a3b31,rgb(32, 31, 31));
+  border-image-slice: 1;
+}

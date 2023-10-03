@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head></head>
+    <title> Album : Seven Days Walking </title>  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="StyleSevenDaysWalking.css">
+
+    <script src="Script.js"></script>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <section id="BloccoMenu">
+          <nav>
+            <ul class="ListaMenu">
+                <li><a href="Index.html#Home">Home</a></li>
+                <li><a href="Index.html#Biografia">Biografia</a></li>
+                <li><a href="Index.html#Album">Album</a></li>
+                <li><a href="Index.html#Video">Video</a></li>
+                <li><a href="Index.html#TourItalia">Tour Italia</a></li>
+                <li><a onclick="vaiAPagina('https://einaudistore.it')">Store</a></li>            
+                <li><a href="#Contatti">Contatti</a></li>
+            </ul>
+          </nav> 
+        </section>           
+      </header>
+    <section id="boxPrincipale">
+      <section id="SevenDaysAlbum">      
+        <div>
+          <h2 class="chiE" > Seven Days Walking Album</h2>
+        </div>
+
+        <div id="AlbumPrincipale" class="clearfix">          
+            <div id="BloccoCentraleAlbum" class="stile-iniziale" onclick="modificaStile()">
+              <div id="bloccoImgPrincipale">
+                <img class="ImgPrincipale" src="img/SevenDaysWalking.jpeg" alt="SevenDaysWalking">
+              </div>
+              <div id="BloccoMenuDay">
+                <nav>
+                  <ul id="DayMenu" class="spostaDestraMenu">
+                    <li><a id="Day1" onclick="mostraTesto('DayUno');">Day One</a></li>
+                    <li><a id="Day2" onclick="mostraTesto('DayDue');">Day Two</a></li>
+                    <li><a id="Day3" onclick="mostraTesto('DayTre');">Day Three</a></li>
+                    <li><a id="Day4" onclick="mostraTesto('DayQuattro');">Day Four</a></li>
+                    <li><a id="Day5" onclick="mostraTesto('DayCinque');">Day Five</a></li>
+                    <li><a id="Day6" onclick="mostraTesto('DaySei');">Day Six</a></li>
+                    <li><a id="Day7" onclick="mostraTesto('DaySette');">Day Seven</a></li>
+                  </ul>
+                </nav> 
+              </div>
+            </div>
+            <section id="day" >
+                <div id="DayUno" class="testonascosto" style="display: none";>
+                  <div>
+                    <iframe style="border-radius:12px" 
+                      src="https://open.spotify.com/embed/album/1m4GKm4lVNZdA4dHwcr8of?utm_source=generator" 
+                      width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    </iframe>                
+                  </div>
+                </div>
+
+                <div id="DayDue" class="testonascosto" style="display: none";>
+                  <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/4GRrwMMcFXZUGIPX6ltBj5?utm_source=generator" 
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                  </iframe>
+                </div>
+
+                <div id="DayTre" class="testonascosto" style="display: none";>
+                  <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/01u5oRKIW5wVrl2Ydg2EW5?utm_source=generator" 
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                  </iframe>
+                </div>
+
+                <div id="DayQuattro" class="testonascosto" style="display: none";>
+                  <iframe style="border-radius:12px" background-color:yellow
+                    src="https://open.spotify.com/embed/album/14qrn11zrDzT1I5vS1O4tN?utm_source=generator"
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                  </iframe>
+                </div>
+
+                <div id="DayCinque" class="testonascosto" style="display: none";>
+                  <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/6RrmFm7D89gVzt5iiUR4sL?utm_source=generator" 
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                  </iframe>
+                </div>
+
+                <div id="DaySei" class="testonascosto" style="display: none";>
+                  <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/4KmdX0Ze23u3XBzScfB3jP?utm_source=generator" 
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                  </iframe>
+                </div>
+
+                <div id="DaySette" class="testonascosto" style="display: none";>
+                  <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/album/4GEcFHTB7y9N8ciFFDIikp?utm_source=generator"
+                    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                  </iframe>
+                </div>
+            </section>           
+        </div>      
+      </section>  
+      
+      <div>
+        <button class="indietro"  onclick="vaiAPagina('Index.html#Album')" role="button"> Indietro </button>        
+      </div>  
+  </section>
+     
+      
+
+    <footer id="Contatti">
+      <div id="Firma">
+        <a>Ludovico Einaudi</a>    
+      </div>  
+      <div id="Social">
+        <ul>      
+          <li ><img id="Spotify" src="img/spotify.png" onclick="vaiAPagina('https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj')"></li>
+          <li ><img id="Twitter" src="img/twitter.png" onclick="vaiAPagina('https://twitter.com/LudovicoEinaud')"></li>
+          <li ><img id="Facebook" src="img/facebook.png" onclick="vaiAPagina('https://www.facebook.com/ludovicoeinaudi/')"> </li>
+          <li ><img id="Instangram" src="img/instagram.png" onclick="vaiAPagina('https://www.instagram.com/ludovico_einaudi/')"></li>
+          <li ><img id="Youtube" src="img/Youtube.png" onclick="vaiAPagina('https://www.youtube.com/channel/UCQxsahIsaO7_nDwVlFRMQiA')"></li>
+        </ul>
+      </div>    
+      <div>
+        <p>2023 © Website created by Ilaria Golluscio</p>
+      </div>  
+    </footer>
+  </body>
+</html>

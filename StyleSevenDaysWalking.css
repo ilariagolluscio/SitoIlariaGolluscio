@@ -1,0 +1,200 @@
+/*CSS SevenDaysAlbum*/
+#boxPrincipale{
+  width: 100%;
+  height: 100%;  
+  padding-top:5%;
+  padding-bottom:5%;
+  background: linear-gradient(to bottom,rgb(110, 172, 182),rgba(0, 0, 0, 0.865));
+  
+  display: flex; /* Utilizza un layout flessibile per allineare i blocchi */
+  flex-direction: column; /* Imposta la direzione della colonna per allineare verticalmente */
+  justify-content: center; /* Allinea verticalmente al centro */
+  align-items: center;
+}
+
+#boxPrincipale button{
+  height: auto;
+  text-align: center;
+  background: linear-gradient(rgb(110, 172, 182),rgba(0, 0, 0, 0.055));  
+  color: rgb(197, 212, 209);  
+  border: outset rgb(68 94 98);
+}
+
+#SevenDaysAlbum{
+  width: 100%;
+  height: 90%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#SevenDaysAlbum .chiE {
+  color:rgb(45, 67, 71);
+}
+
+#SevenDaysAlbum h2{
+  max-height: 20%;
+  max-width: 100%;
+  margin-left:2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+#AlbumPrincipale{
+  max-height: 80%;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+.stile-iniziale {  
+  cursor: pointer;
+  width:100%;
+  height: 60%;
+  margin-bottom:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stile-modificato { 
+  width:40%;
+  height: 60%; 
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left:2%;
+  margin-bottom:5%;
+}
+
+#bloccoImgPrincipale{
+  max-width: 50%; 
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+}
+
+.ImgPrincipale{
+  width: 60%;
+  height: auto;
+}
+
+#BloccoMenuDay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, rgb(212 208 197), rgb(155 166 155), rgb(128 135 118), rgb(130 140 146), rgb(147 173 177), rgb(86 101 106), rgb(68 94 98)); /* Applica il gradiente al bordo sinistro */
+}
+
+#BloccoMenuDay {
+  max-width: 50%;
+  height: auto;
+  margin: 0;
+  position: relative;
+  border: none; 
+}
+
+
+/*background-color: linear-gradient(to bottom, rgb(212 208 197), rgb(155 166 155), rgb(128 135 118), rgb(130 140 146), rgb(147 173 177), rgb(86 101 106), rgb(68 94 98));*/
+
+#BloccoMenuDay ul {
+  list-style-type: none;
+  align-items: center;
+  font-size: 20pt;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+#DayMenu li{  
+  margin-left: 0;
+  padding-bottom:2%;
+  text-align:left;
+}
+
+#DayMenu li a {  
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom:2%;
+}
+
+#DayMenu li a:hover {
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 1px; 
+  margin-left:-2%;
+}
+
+#day{
+  width:50%;
+  height: 60%; 
+  float:right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#Day7{
+  color:rgb(70, 133, 143);
+  margin-bottom:0;
+}
+#Day6{
+  color:rgb(121, 157, 170);
+}
+#Day5{
+  color:rgb(147 173 177);
+}
+#Day4{
+  color:rgb(128 135 118);
+}
+#Day3{
+  color:rgb(128 135 118);
+}
+#Day2{
+  color:rgb(155 166 155);
+}
+#Day1{
+  margin-top:0;
+  color:rgb(212 208 197);
+}
+
+#Day1:hover, #Day2:hover, #Day3:hover, #Day4:hover, #Day5:hover, #Day6:hover, #Day7:hover{
+color:whitesmoke;
+}
+
+#Day1:hover{
+  background-color:rgb(173, 169, 157);
+}
+#Day2:hover {
+  background-color:rgb(155 166 155);
+}
+#Day3:hover{
+  background-color:rgb(128 135 118);
+}
+#Day4:hover{
+  background-color:rgb(130 140 146);
+}
+#Day5:hover{
+  background-color:rgb(147 173 177);
+}
+#Day6:hover{
+  background-color:rgb(101, 123, 130);
+}
+#Day7:hover{
+  background-color:rgb(68 94 98);
+}

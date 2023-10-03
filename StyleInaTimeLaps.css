@@ -1,0 +1,18 @@
+#album{
+    background: linear-gradient(#703015,#2f1b14,rgb(32, 31, 31));
+}
+#album h2{
+    color:#f08d4f;
+}
+
+#album button{
+    background: linear-gradient(#703015,#2f1b14);
+    color: #f9a672;  
+    border: outset #703015;      
+}
+
+#bloccoImg {
+  border-right: 2px solid transparent;
+  border-image: linear-gradient(to bottom, #251f1df1,#2f1b14,#e3561e,#f08d4f,#703015,#2f1b14,rgb(32, 31, 31));
+  border-image-slice: 1;
+}
