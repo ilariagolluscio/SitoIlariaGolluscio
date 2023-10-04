@@ -34,6 +34,10 @@ header{
   position: absolute;
 }
 
+#iconamenu{
+  display: none;
+}
+
 #BloccoMenu{
   width: 100%;
   height: 100%;
@@ -393,6 +397,11 @@ ul.ListaMenu{
   left: 0;
 }
 
+#imgTicket {
+  display: none; /* Nascondi il bottone per dispositivi non mobili */
+  width: 50%;
+  height: auto;
+}
 
 /*CSS piè di pagina*/
 footer {  
@@ -401,7 +410,7 @@ footer {
   height:auto;
   background-color:rgba(14, 14, 14, 0.861);
   text-align: center;
-  padding: 2% 0;
+  padding-bottom:0;
   display: flex; /* Utilizza il flexbox per allineare verticalmente gli elementi */
   flex-direction: column; /* Imposta il layout in colonna per centrare le immagini sotto la firma */
 }
@@ -454,9 +463,121 @@ footer p{
 
 
 @media screen and (max-width: 768px) {
-  /* Stili per schermi più piccoli, ad esempio smartphone */
-  body {
-    font-size: 16px; /* Modifica il font size per leggibilità su schermi più piccoli */
+  .Container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('img/enaudi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* Centra l'immagine di sfondo */
   }
-  /* Altri stili specifici per smartphone */
-}
+  header {
+    height: auto; /* Imposta l'altezza automaticamente per adattarsi al contenuto */
+    width: auto;
+    background-color: transparent;
+  }
+
+  #BloccoMenu {
+    width: auto;
+    height: auto;
+    margin:2%;
+    text-align: left;
+    top:0;
+    position:relative;
+    padding: 5px; /* Aggiungi un po' di spazio intorno al BloccoMenu */
+  }
+
+  #BloccoMenu ul{
+    display: none;
+    align-items: left;
+    background-color: rgba(25, 25, 25, 0.785);    
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }  
+  
+  #iconamenu{
+    display: block;
+    width: 15%;
+    height: auto;
+    order: 2;
+    top:0;
+    position: relative;
+  }
+
+  #ListaMenu{  
+    width: 45%;
+    height: auto; 
+    float:left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #ListaMenu li {
+    margin: 10px 0; 
+    padding-left:10px;
+    padding-right:10px;
+    font-size: 16pt;
+  }
+
+  #ListaMenu li a:hover {
+    min-width: max-content;
+    padding: 2px; 
+  }
+
+  #bloccoSotto {
+    flex-direction: column; 
+  }
+  
+  #imgAutore {
+    order: 1; /* Rendi l'immagine prima del testo nella colonna */
+  }
+  #TestoBiografia {
+    text-align:left;
+    font-size:auto;
+    order: 2; 
+  }
+  #VideoDocumentario {
+    flex-direction: column; 
+    text-align: center;
+  }
+  
+  #videoDoc {
+    order: 1; 
+  }
+  
+  #ParagrafoVideo {
+    order: 2; 
+    font-size: auto;
+  }
+
+  .imgRotonda {
+    width: 100px; /* Imposta la larghezza desiderata per le immagini degli album */
+    height: 100px; /* Imposta l'altezza desiderata per le immagini degli album */
+    margin:2%;
+  }
+  #tour {
+    flex-direction: column; /* Cambia il layout in colonna per schermi più piccoli */
+    text-align: center;
+  }
+  #mappaGoogle {
+    order: 1; /* Rendi il blocco mappe il primo elemento nella colonna */
+    width: 70%;
+    height: auto;
+    margin: 0 auto; /* Allinea orizzontalmente al centro */
+  }
+  #date {
+    width: 70%;
+    height: auto;
+    order: 2; /* Rendi il frame per l'acquisto dei biglietti il secondo elemento nella colonna */
+    margin: 0 auto; /* Allinea orizzontalmente al centro */
+  }
+  #date iframe{
+    display: none;
+  }
+  
+  #imgTicket {
+    display: block;
+    order: 3; /* Rendi l'immagine del ticket il terzo elemento nella colonna */
+    margin: 0 auto; /* Allinea orizzontalmente al centro */
+  }
+}  
+  

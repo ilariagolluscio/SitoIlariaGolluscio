@@ -41,7 +41,6 @@ function scrollToAnchor() {
 
 //metti nuovamente visibile la parte di testo scelta dall'utente cliccando il bottone
 function mostraTesto(testoId) {
-
   var testoNascosto = document.getElementById(testoId);
   var tuttiTestiNascosti = document.getElementsByClassName("testonascosto");
 
@@ -64,6 +63,21 @@ function modificaStile() {
     menuElement.classList.remove("stile-iniziale");
     menuElement.classList.add("stile-modificato");
 }
+
+// mastra gli elementi del menu per il telefono
+function mostramenu() {
+  var submenu = document.getElementById("ListaMenu");
+
+  // Verifica se il submenu è attualmente nascosto o visibile
+  if (submenu.style.display === "none" || submenu.style.display === "") {
+    // Se è nascosto, mostra il submenu con un effetto di "slide down"
+    submenu.style.display = "block";
+  } else {
+    // Se è visibile, nascondi il submenu con un effetto di "slide up"
+    submenu.style.display = "none";
+  }
+}
+
 
 
 
