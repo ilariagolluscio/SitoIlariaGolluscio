@@ -8,7 +8,7 @@ body {
   font-family: 'Alumni Sans', sans-serif;  
   position: relative; 
   width: 100%;
-  height: 100%; 
+  height: auto; 
   margin:0;
   overflow-y: scroll;
 }
@@ -82,7 +82,7 @@ ul.ListaMenu{
 
 /*CSS per la home*/
 .Container{  
-  height: 100%;
+  height: auto;
   width: 100%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('img/enaudi.jpeg');
   filter: brightness(1.2);
@@ -105,7 +105,7 @@ ul.ListaMenu{
 
 #Pag1{  
   width: 100%;
-  height: 100%;
+  height: auto;
   padding-top: 6%; 
   background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941),rgba(176, 172, 172, 0.279));
   align-items: center;
@@ -114,7 +114,7 @@ ul.ListaMenu{
 
 #bloccoSopra {
   height: 21%;
-  width: 100%;  
+  height: auto;  
   max-width: 100%;
   text-align: center;
   align-items: center;
@@ -278,7 +278,7 @@ ul.ListaMenu{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -357,7 +357,7 @@ ul.ListaMenu{
   padding-top:6%;
   padding-bottom:5%;
   width: 100%;
-  height: 100%;
+  height: auto;
   text-align: center;
 }
 #tour{
@@ -377,13 +377,13 @@ ul.ListaMenu{
 
 #date{
   width: 60%;
-  height: 100%;
+  height: auto;
 }
 
 #date iframe,#mappaGoogle iframe{
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   border: none;
   top: 0;
   left: 0;
@@ -439,8 +439,8 @@ footer {
 }
 
 #Spotify,#Facebook,#Instangram,#Twitter,#Youtube {
-  block-size: 40px; 
-  height: 40px; 
+  block-size: 4%; 
+  height: 4%; 
   max-width: 100%;  
 }
 
