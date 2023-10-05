@@ -71,15 +71,54 @@ function modificaStile() {
 function mostramenu() {
   var submenu = document.getElementById("ListaMenu");
 
-  // Verifica se il submenu è attualmente nascosto o visibile
   if (submenu.style.display === "none" || submenu.style.display === "") {
-    // Se è nascosto, mostra il submenu con un effetto di "slide down"
     submenu.style.display = "block";
   } else {
-    // Se è visibile, nascondi il submenu con un effetto di "slide up"
     submenu.style.display = "none";
   }
 }
+
+
+// Funzione per verificare se le dimensioni dello schermo sono quelle di un telefono
+function isMobileScreen() {
+  return window.innerWidth <= 768;
+}
+
+
+// gestore di eventi per il caricamento della pagina
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (isMobileScreen()) {
+
+    document.addEventListener("click", function (event) {
+      var submenu = document.getElementById("ListaMenu");
+      var iconamenu = document.getElementById("iconamenu");
+
+      if (
+        event.target === iconamenu){
+          return;
+      } 
+      else if(event.target === submenu ||submenu.contains(event.target) ){
+        submenu.style.display = "none";
+        }
+        else {
+        submenu.style.display = "none";
+      }
+    });
+  }
+
+  // Funzione per mostrare/nascondere il menu
+  function mostramenu() {
+    var submenu = document.getElementById("ListaMenu");
+
+    if (submenu.style.display === "none" || submenu.style.display === "") {
+      submenu.style.display = "block";
+    } else {
+      submenu.style.display = "none";
+    }
+  }
+
+});
 
 
 

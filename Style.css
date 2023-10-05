@@ -250,6 +250,9 @@ ul.ListaMenu{
   text-align: center;
   max-width: 100%;
 }
+#ElencoAlbum td {
+  width: 25%;
+}
 
 .allineamentoVerticale {  
   color: rgb(18, 18, 18);  
