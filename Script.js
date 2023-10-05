@@ -59,10 +59,13 @@ function mostraTesto(testoId) {
 
 function modificaStile() {
   var menuElement = document.getElementById("BloccoCentraleAlbum");
-    // aggiungi la classe "stile-modificato" e rimuovi "stile-iniziale"
+  
+  if (window.innerWidth >= 768) {
     menuElement.classList.remove("stile-iniziale");
     menuElement.classList.add("stile-modificato");
+  }
 }
+
 
 // mastra gli elementi del menu per il telefono
 function mostramenu() {

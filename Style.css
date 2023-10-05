@@ -359,49 +359,79 @@ ul.ListaMenu{
 /*CSS per Tour Italia*/
 #TourItalia{
   padding-top:6%;
-  padding-bottom:5%;
+  padding-bottom:0;
+  margin-bottom: 5%;
   width: 100%;
-  height: 100%;
+  height: auto;
   text-align: center;
   background: linear-gradient(to bottom, rgba(59, 58, 57, 0.591),rgba(25, 25, 25, 0.785));
 }
+
 #TourItalia .titolo{
   color:rgb(59, 58, 57);
 }
-#tour{
+
+#TourItalia p{
+  margin:2%;
+}
+
+#mappaGoogle {
+  text-align:center;
+  margin:2%;
+}
+
+#mappaGoogle iframe{
   width: 96%;
-  height: 60%;
-  margin: 2%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  gap:2%;
-}
-
-#mappaGoogle{
-  width: 40%;
-  height: 100%;
-}
-
-#date{
-  width: 60%;
-  height: 100%;
-}
-
-#date iframe,#mappaGoogle iframe{
-  width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   border: none;
   top: 0;
   left: 0;
 }
 
-#imgTicket {
-  display: none; /* Nascondi il bottone per dispositivi non mobili */
-  width: 50%;
-  height: auto;
+#date {
+  text-align: center;
+  margin-top: 20px;
 }
+
+#date h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+#orari {  
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#dic{
+  border-left:2px solid rgb(68, 67, 67);
+}
+
+#nov, #dic{
+  text-align: center;
+  padding:2%;
+}
+#nov ul li, #dic ul li{
+  text-align: center;
+}
+
+#nov ul, #dic ul {
+  list-style-type: none;
+  text-align: justify;
+  padding-left: 0;
+}
+
+#imgTicket {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
 
 /*CSS piè di pagina*/
 footer {  
@@ -482,7 +512,7 @@ footer p{
     text-align: left;
     top:0;
     position:relative;
-    padding: 5px; /* Aggiungi un po' di spazio intorno al BloccoMenu */
+    padding: 5px; 
   }
 
   #BloccoMenu ul{
@@ -528,8 +558,16 @@ footer p{
   }
   
   #imgAutore {
-    order: 1; /* Rendi l'immagine prima del testo nella colonna */
+    order: 1; 
   }
+
+  #dic{
+    border-left:2px solid transparent;
+  }
+  #nov,#dic{
+    border-bottom:2px solid rgb(71, 70, 70);
+  }
+
   #TestoBiografia {
     text-align:left;
     font-size:auto;
@@ -550,34 +588,35 @@ footer p{
   }
 
   .imgRotonda {
-    width: 100px; /* Imposta la larghezza desiderata per le immagini degli album */
-    height: 100px; /* Imposta l'altezza desiderata per le immagini degli album */
+    width: 100px; 
+    height: 100px; 
     margin:2%;
   }
   #tour {
-    flex-direction: column; /* Cambia il layout in colonna per schermi più piccoli */
+    flex-direction: column;
     text-align: center;
   }
+  
   #mappaGoogle {
-    order: 1; /* Rendi il blocco mappe il primo elemento nella colonna */
+    order: 1; 
     width: 70%;
     height: auto;
-    margin: 0 auto; /* Allinea orizzontalmente al centro */
+    margin: 0 auto; 
   }
   #date {
     width: 70%;
     height: auto;
-    order: 2; /* Rendi il frame per l'acquisto dei biglietti il secondo elemento nella colonna */
-    margin: 0 auto; /* Allinea orizzontalmente al centro */
-  }
-  #date iframe{
-    display: none;
+    order: 2;
+    margin: 0 auto;
   }
   
   #imgTicket {
     display: block;
-    order: 3; /* Rendi l'immagine del ticket il terzo elemento nella colonna */
-    margin: 0 auto; /* Allinea orizzontalmente al centro */
+    width: 50%;
+    height: auto;
+    order: 3;
+    margin-bottom:5%;
+    margin-top:5%;
   }
 }  
   
