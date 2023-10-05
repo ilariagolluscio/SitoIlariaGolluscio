@@ -410,6 +410,14 @@ ul.ListaMenu{
   flex-wrap: wrap;
 }
 
+#orari iframe{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  margin:2%;
+}
+
 #dic{
   border-left:2px solid rgb(68, 67, 67);
 }
@@ -595,6 +603,7 @@ footer p{
     height: 100px; 
     margin:2%;
   }
+
   #tour {
     flex-direction: column;
     text-align: center;
@@ -605,6 +614,9 @@ footer p{
     width: 70%;
     height: auto;
     margin: 0 auto; 
+  }
+  #orari iframe{
+    display:none;
   }
   #date {
     width: 70%;
