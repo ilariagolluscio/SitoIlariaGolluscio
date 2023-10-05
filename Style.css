@@ -411,11 +411,12 @@ ul.ListaMenu{
 }
 
 #orari iframe{
-  width: auto;
+  width: 50%;
   max-width: 100%;
   height: auto;
   border: none;
-  margin:2%;
+  top: 0;
+  left: 0;
 }
 
 #dic{
