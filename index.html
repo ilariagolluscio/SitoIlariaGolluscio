@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="Style.css">
 
   <script src="Script.js"></script>
+  <script src="ScriptVideo.js"></script>
 
 
 
@@ -32,7 +33,7 @@
           <li><a onclick="scrollToSection('Home')">Home</a></li>
           <li><a onclick="scrollToSection('Biografia')">Biografia</a></li>
           <li><a onclick="scrollToSection('Album')">Album</a></li>
-          <li><a onclick="scrollToSection('Video')">Video</a></li>
+          <li><a id="VoceVideo" onclick="scrollToSection('Video')">Video</a></li>
           <li><a onclick="scrollToSection('TourItalia')">Tour Italia</a></li>
           <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
           <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
@@ -319,6 +320,38 @@
     </table>
   </section>
 
+  <div id="Video">
+    <h2 class="chiE">Alcuni suoi video</h2>
+    <div id="list-container">        
+        <ul id="circular-list">
+        </ul>
+    </div>
+    <div id="video-container">
+        <video class="riquadroVideo" id="video0" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi - _Elegy for the Arctic_ - Official Live (Greenpeace).mp4" type="video/mp4">
+        </video>
+        <video class="riquadroVideo" id="video1" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi - Divenire (Live from The Royal Albert Hall London _ 2010).mp4"  type="video/mp4">
+        </video>
+        <video class="riquadroVideo" id="video2" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi - Experience (Official Visualizer).mp4" type="video/mp4">
+        </video>
+        <video class="riquadroVideo" id="video3" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi - Le Onde (Live at the Old Vic Tunnels _ 2011).mp4" type="video/mp4">
+        </video>
+        <video class="riquadroVideo" id="video4" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi - Nuvole Bianche (Official Visualiser).mp4" type="video/mp4">
+        </video>
+        <video class="riquadroVideo" id="video5" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi – Una Mattina (Live A Fip 2015).mp4" type="video/mp4">
+        </video>
+        <video class="riquadroVideo" id="video6" controls volume="0.5" style="display:none">
+        <source src="video/Ludovico Einaudi - Walk (Official Music Video).mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+
   <section id="TourItalia">
     <h2 class="titolo">Tour Italia</h2>
     <p>In italia tutti gli spettacoli si tengono presso il Teatro del Verme di Milano.</p>
@@ -376,8 +409,9 @@
           onclick="apriPagina('https://www.ticketone.it/artist/ludovico-einaudi/')">
       </section>
     </section>
+  </section>
 
-    <footer id="Contatti">
+  <footer id="Contatti">
       <section id="Firma">
         <a>Ludovico Einaudi</a>
       </section>
@@ -398,7 +432,8 @@
       <div>
         <p>2023 © Website created by Ilaria Golluscio</p>
       </div>
-    </footer>
+  </footer>
+
 </body>
 
 </html>
