@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title> Ludovico Einaudi </title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="Style.css">
+
+  <script src="Script.js"></script>
+  <script src="ScriptVideo.js"></script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <section id="BloccoMenu">
+        <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
+        <nav>
+          <ul class="ListaMenu" id="ListaMenu">
+            <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
+            <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
+            <li><a onclick="vaiAPagina('Album.html')">Album</a></li>
+            <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
+            <li><a >Tour Italia</a></li>
+            <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
+            <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
+          </ul>
+        </nav>
+      </section>
+  </header>
+
+  <section id="TourItalia">
+    <h2 class="titolo">Tour Italia</h2>
+    <p>In italia tutti gli spettacoli si tengono presso il Teatro del Verme di Milano.</p>
+    <p>Di seguito la mappa per raggiungere il teatro e le date disponibili con il sito per comprare eventuali biglietti.
+    </p>
+    <section id="tour">
+      <div id="mappaGoogle">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.1369774769!2d9.178345375144733!3d45.467044533250515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6a3dd53ea49%3A0x81e8a505024025fb!2sTeatro%20Dal%20Verme!5e0!3m2!1sit!2sit!4v1696334496081!5m2!1sit!2sit"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <section id="date"> 
+        <h3>
+          <n>2023</n>
+        </h3>       
+        <div id="orari">          
+          <div id="nov">
+            <h3>
+              <n>Novembre</n>
+            </h3>
+            <ul>
+              <li> Giovedì 30 alle ore 8:00 PM </li>
+            </ul>
+          </div>
+          <div id="dic">
+            <h3>
+              <n>Dicembre</n>
+            </h3>
+            <ul>
+              <li> Venerdì 1 alle ore 8:00 PM </li>
+              <li> Sabato 2 alle ore 8:00 PM </li>
+              <li> Domenica 3 alle ore 8:00 PM </li>
+              <li> Venerdì 1 alle ore 8:00 PM </li>
+              <li> Martedì 5 alle ore 8:00 PM</li>
+              <li> Mercoledì 6 alle ore 8:00 PM</li>
+              <li> Venerdì 8 alle ore 8:00 PM</li>
+              <li> Sabato 9 alle ore 8:00 PM</li>
+              <li> Domenica 10 alle ore 8:00 PM</li>
+              <li> Lunedì 11 alle ore 8:00 PM</li>
+              <li> Mercoledì 13 alle ore 8:00 PM </li>
+              <li> Giovedì 14 alle ore 8:00 PM</li>
+              <li> Venerdì 15 alle ore 8:00 PM</li>
+              <li> Sabato 16 alle ore 8:00 PM</li>
+              <li> Domenica 17 alle ore 8:00 PM</li>
+              <li> Martedì 19 alle ore 8:00 PM</li>
+              <li> Mercoledì 20 alle ore 8:00 PM</li>
+            </ul>
+          </div>
+          <iframe 
+          src="https://www.ticketone.it/artist/ludovico-einaudi/">
+          </iframe>
+        </div>
+        <img id="imgTicket" src="img/ticket.png"
+          onclick="apriPagina('https://www.ticketone.it/artist/ludovico-einaudi/')">
+      </section>
+    </section>
+  </section>
+
+  <footer id="Contatti">
+    <section id="Firma">
+      <a>Ludovico Einaudi</a>
+    </section>
+    <section id="Social">
+      <ul>
+        <li><img id="Spotify" src="img/spotify.png"
+            onclick="apriPagina('https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj')"></li>
+        <li><img id="Twitter" src="img/twitter.png" onclick="apriPagina('https://twitter.com/LudovicoEinaud')"></li>
+        <li><img id="Facebook" src="img/facebook.png"
+            onclick="apriPagina('https://www.facebook.com/ludovicoeinaudi/')">
+        </li>
+        <li><img id="Instangram" src="img/instagram.png"
+            onclick="apriPagina('https://www.instagram.com/ludovico_einaudi/')"></li>
+        <li><img id="Youtube" src="img/Youtube.png"
+            onclick="apriPagina('https://www.youtube.com/channel/UCQxsahIsaO7_nDwVlFRMQiA')"></li>
+      </ul>
+    </section>
+    <div>
+      <p>2023 © Website created by Ilaria Golluscio</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

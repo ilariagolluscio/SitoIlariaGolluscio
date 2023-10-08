@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title> Ludovico Einaudi </title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="Style.css">
+
+  <script src="Script.js"></script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <section id="BloccoMenu">
+      <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
+      <nav>
+        <ul class="ListaMenu" id="ListaMenu">
+          <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
+          <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
+          <li><a>Album</a></li>
+          <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
+          <li><a onclick="vaiAPagina('TourItalia.html')">Tour Italia</a></li>
+          <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
+          <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  
+  <section id="Album" class="album">
+    <h2 class="titolo"> I suoi Album </h2>
+    <table id="ElencoAlbum">
+      <tr>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/Underwater.jpg" alt="Underwater" width="140" height="140">
+            <div class="overlay">
+              <a id="bottoneUnderwater" class="bottone" onclick="vaiAPagina('Underwater.html')"
+                role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/SevenDaysWalking.jpeg" alt="SevenDaysWalking" width="140" height="140">
+            <div class="overlay">
+              <a id="bottoneSevenDaysWalking" class="bottone" onclick="vaiAPagina('SevendaysWalking.html')"
+                role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/Element.jpg" alt="Element" width="140" height="140">
+            <div class="overlay">
+              <a id="bottoneElement" class="bottone" onclick="vaiAPagina('Element.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 class="TitoloAlbum">Underwater</h2>
+        </td>
+        <td>
+          <h2 class="TitoloAlbum">Seven Days Walking</h2>
+        </td>
+        <td>
+          <h2 class="TitoloAlbum">Element</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="allineamentoVerticale">
+          <h3>2022</h3>
+          <p><i>" Underwater "</i> è nato quando il mondo era fermo e silenzioso, consentendo all'artista di immergersi
+            in uno
+            spazio libero,
+            senza confini, dando una dimensione fluida e parallela, che scorre senza interferenze esterne. Esso è
+            composto da forme brevi,
+            quasi canzoni, scritte di getto sul pianoforte, definite dall'artista come un’onda che va e che viene</p>
+        </td>
+        <td class="allineamentoVerticale">
+          <h3>2019</h3>
+          <p><i>" Seven Days Walking " </i>è un progetto ambizioso, composto da sette album, in cui si cerca di entrare
+            nei
+            meandri del processo creativo, per capire come un’idea musicale può svilupparsi in più direzioni, cambiando
+            nuovamente nel momento in cui viene ascoltata. È caratterizzato da una musica delicata,
+            minimalista e
+            riflessiva creando un'esperienza musicale profonda e coinvolgente.
+          </p>
+        </td>
+        <td class="allineamentoVerticale">
+          <h3>2015</h3>
+          <p><i>" Element "</i> prende ispirazione da elementi della natura, con ogni traccia che evolve da un piccolo
+            gesto o
+            motivo, evocando un viaggio attraverso pensieri e sentimenti frammentati. Einaudi afferma che con questo
+            album ha visto nuove frontiere, al confine tra ciò che sapeva e ciò che non sapeva.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/InTimeLaps.png" alt="InTimeLaps" width="140" height="140">
+            <div class="overlay">
+              <a id="bottoneInTimeLaps" class="bottone" onclick="vaiAPagina('InaTimeLaps.html')"
+                role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/Nightbook.jpg" alt="Nightbook" width="140" height="140">
+            <div class="overlay">
+              <a id="bottoneNightbook" class="bottone" onclick="vaiAPagina('Nightbook.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/Divenire.jpg" alt="Divenire" width="140" height="140">
+            <div class="overlay">
+              <a id="bottonDivenire" class="bottone" onclick="vaiAPagina('Divenire.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h2 class="TitoloAlbum">In a Time Laps</h2>
+        </td>
+        <td>
+          <h2 class="TitoloAlbum">Nightbook</h2>
+        </td>
+        <td>
+          <h2 class="TitoloAlbum">Divenire</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="allineamentoVerticale">
+          <h3>2013</h3>
+          <p><i>" In a Time laps "</i> rappresenta l'autore quando diventa cosciente del fatto che il tempo ha un
+            limite, e proprio quando si conosce il proprio limite nasce un esigenza interiore per cercare di colmare
+            il vuoto con tutta la tua energia e ricominci a vivere ogni istante della tua vita in modo pieno come
+            quando eri bambino. Questi brani esplorano tessiture sonore e arrangiamenti che fondono mondi musicali
+            diversi in un linguaggio
+            stratificato, coerente e preciso.
+          </p>
+        </td>
+        <td class="allineamentoVerticale">
+          <h3>2009</h3>
+          <p><i>" Nightbook" </i> è un percorso nel quale ogni brano è il capitolo di una storia, la sfaccettatura di un
+            prisma, uno sguardo possibile sulle esperienze che appartengono al lato più onirico, più interno di noi
+            stessi, che esplorano le emozioni notturne e l'introspezione.
+            Esso apre una finestra sull’interno, e sulla possibilità di entrare in contatto con quegli aspetti profondi
+            della realtà che rimandano a una dimensione mitica, potremmo dire originaria.
+          </p>
+        </td>
+        <td class="allineamentoVerticale">
+          <h3>2006</h3>
+          <p><i>" Divenire "</i> è un disco morbido e sinuoso, lontano, che si prefigge come chiave dell'anima che può
+            aprire qualsiasi serratura, se inserita nel modo giusto.
+            Questo album rappresenta la pura essenza delle cose, dalle foglie mosse dal vento alle onde che si
+            infrangono contro gli scogli. Può essere tutto come niente, può rappresentare ogni sfaccettatura del cuore
+            umano, dalle passioni ai rancori, dalle speranze ai desideri.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/UnaMattina.jpeg" alt="UnaMattima" width="140" height="140">
+            <div class="overlay">
+              <a id="bottonUnaMattina" class="bottone" onclick="vaiAPagina('UnaMattina.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/IGiorni.jpg" alt="IGionri" width="140" height="140">
+            <div class="overlay">
+              <a id="bottonIGiorni" class="bottone" onclick="vaiAPagina('IGiorni.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/EdenRock.jpg" alt="EdenRock" width="140" height="140">
+            <div class="overlay">
+              <a id="bottonEdenRock" class="bottone" onclick="vaiAPagina('EdenRock.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2 class="TitoloAlbum">Una Mattina</h2>
+        </td>
+        <td>
+          <h2 class="TitoloAlbum">I Giorni</h2>
+        </td>
+        <td>
+          <h2 class="TitoloAlbum">Eden Roc</h2>
+        </td>
+      </tr>
+      <tr>
+        <td class="allineamentoVerticale">
+          <h3>2004</h3>
+          <p><i>" Una mattina "</i> è un album che ha concesso alcuni brani come colonne sonore di grandi film come
+            "Quasi amici". Questo album è dedicato a poeti, sognatori, innamorati, disperati e incazzati, perchè questo
+            album esprime pura verità per qualunque esigenza morale, grazie alla miscela di strumenti d'archi e altri
+            suoni ambientali con il pianoforte.</p>
+        </td>
+        <td class="allineamentoVerticale">
+          <h3>2001</h3>
+          <p> <i>" I Giorni "</i> nasce da un viaggio a Mali, un giro in auto a Bamako e una melodia popolare trasmessa
+            alla radio. Ludovico sente quella melodia, ne prende lo spirito, una voce muta, legata alla terra, un lamento, un afflato, che è
+            comune a molte sue composizioni da cui si sprigiona un respiro lento, soppesato e intimo. E così quella
+            melodia diventa il tema portante che percorre il disco nota per la sua semplicità ed eleganzaca.</p>
+        </td>
+        <td class="allineamentoVerticale">
+          <h3>1999</h3>
+          <p><i>" Eden Roc "</i> prende ispirazione dalla località dove visse lo scrittore Francis Scott Fitzgerald, che
+            Einaudi considera come il luogo ideale per trovare l’equilibrio interiore, catturando spesso un senso di
+            tranquillità e contemplazione.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="immagine-container">
+          <div class="img-wrapper">
+            <img class="imgRotonda" src="img/LeOnde.jpg" alt="LeOnde" width="140" height="140">
+            <div class="overlay">
+              <a id="bottonLeOnde" class="bottone" onclick="vaiAPagina('LeOnde.html')" role="button">Ascolta</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2 class="TitoloAlbum">Le Onde</h2>
+        </td>
+      </tr>
+      <tr>
+        <td class="allineamentoVerticale">
+          <h3>1994</h3>
+          <p><i>" Le Onde "</i> è ispirato alle onde dell'oceano e alle loro variazioni di movimento, infatti le tracce
+            sono spesso fluide e riflettono l'andare e venire delle onde</p>
+        </td>
+      </tr>
+
+    </table>
+  </section>
+
+  <footer id="Contatti">
+    <section id="Firma">
+      <a>Ludovico Einaudi</a>
+    </section>
+    <section id="Social">
+      <ul>
+        <li><img id="Spotify" src="img/spotify.png"
+            onclick="apriPagina('https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj')"></li>
+        <li><img id="Twitter" src="img/twitter.png" onclick="apriPagina('https://twitter.com/LudovicoEinaud')"></li>
+        <li><img id="Facebook" src="img/facebook.png"
+            onclick="apriPagina('https://www.facebook.com/ludovicoeinaudi/')">
+        </li>
+        <li><img id="Instangram" src="img/instagram.png"
+            onclick="apriPagina('https://www.instagram.com/ludovico_einaudi/')"></li>
+        <li><img id="Youtube" src="img/Youtube.png"
+            onclick="apriPagina('https://www.youtube.com/channel/UCQxsahIsaO7_nDwVlFRMQiA')"></li>
+      </ul>
+    </section>
+    <div>
+      <p>2023 © Website created by Ilaria Golluscio</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

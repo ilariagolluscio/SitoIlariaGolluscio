@@ -26,18 +26,19 @@
 <body>
     <header>
         <section id="BloccoMenu">
+            <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
             <nav>
-                <ul class="ListaMenu">
-                    <li><a href="index.html#Home">Home</a></li>
-                    <li><a href="index.html#Biografia">Biografia</a></li>
-                    <li><a href="index.html#Album">Album</a></li>
-                    <li><a id="VoceVideo" href="index.html#Video">Video</a></li>
-                    <li><a href="index.html#TourItalia">Tour Italia</a></li>
-                    <li><a onclick="vaiAPagina('https://einaudistore.it')">Store</a></li>
-                    <li><a href="#Contatti">Contatti</a></li>
-                </ul>
+              <ul class="ListaMenu" id="ListaMenu">
+                <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
+                <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
+                <li><a onclick="vaiAPagina('Album.html')">Album</a></li>
+                <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
+                <li><a onclick="vaiAPagina('TourItalia.html')">Tour Italia</a></li>
+                <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
+                <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
+              </ul>
             </nav>
-        </section>
+          </section>
     </header>
 
     <section id="album">
