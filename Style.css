@@ -586,10 +586,22 @@ footer {
   max-width: 100%;  
 }
 
-footer p{
+#copiright{
   color:rgb(204, 204, 204);
-
 }
+footer p{
+  color: rgb(204, 204, 204); 
+}
+
+#rifDoc {
+  color: rgb(204, 204, 204); 
+  text-decoration: none; 
+}
+
+#rifDoc:hover {
+  text-decoration: underline;
+}
+
 
 
 @media screen and (max-width: 768px) {
