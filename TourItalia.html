@@ -2,6 +2,15 @@
 <html lang="it">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EV7FHQQB6N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EV7FHQQB6N');
+  </script>
   <title> Ludovico Einaudi </title>
 
   <meta charset="UTF-8">
@@ -15,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,31 +35,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
 
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV7FHQQB6N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-EV7FHQQB6N');
-</script>
 <body>
   <header>
     <section id="BloccoMenu">
-        <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
-        <nav>
-          <ul class="ListaMenu" id="ListaMenu">
-            <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
-            <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
-            <li><a onclick="vaiAPagina('Album.html')">Album</a></li>
-            <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
-            <li><a >Tour Italia</a></li>
-            <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
-            <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
-          </ul>
-        </nav>
-      </section>
+      <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
+      <nav>
+        <ul class="ListaMenu" id="ListaMenu">
+          <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
+          <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
+          <li><a onclick="vaiAPagina('Album.html')">Album</a></li>
+          <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
+          <li><a>Tour Italia</a></li>
+          <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
+          <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
+        </ul>
+      </nav>
+    </section>
   </header>
 
   <section id="TourItalia">
@@ -65,9 +66,9 @@
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-      <section id="date"> 
-        <h4 id="anno">2023</h4>  
-        <div id="orari">          
+      <section id="date">
+        <h4 id="anno">2023</h4>
+        <div id="orari">
           <div id="nov">
             <h3>
               <p>Novembre</p>
@@ -100,8 +101,7 @@
               <li> Mercoledì 20 alle ore 8:00 PM</li>
             </ul>
           </div>
-          <iframe 
-          src="https://www.ticketone.it/artist/ludovico-einaudi/">
+          <iframe src="https://www.ticketone.it/artist/ludovico-einaudi/">
           </iframe>
         </div>
         <img id="imgTicket" src="img/ticket.png"
@@ -119,8 +119,7 @@
         <li><img id="Spotify" src="img/spotify.png"
             onclick="apriPagina('https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj')"></li>
         <li><img id="Twitter" src="img/twitter.png" onclick="apriPagina('https://twitter.com/LudovicoEinaud')"></li>
-        <li><img id="Facebook" src="img/facebook.png"
-            onclick="apriPagina('https://www.facebook.com/ludovicoeinaudi/')">
+        <li><img id="Facebook" src="img/facebook.png" onclick="apriPagina('https://www.facebook.com/ludovicoeinaudi/')">
         </li>
         <li><img id="Instangram" src="img/instagram.png"
             onclick="apriPagina('https://www.instagram.com/ludovico_einaudi/')"></li>
@@ -132,7 +131,7 @@
       <a id="rifDoc" href="Documentazione.html"> Documentazione</a>
       <p>2023 © Website created by Ilaria Golluscio</p>
     </div>
-</footer>
+  </footer>
 
 </body>
 
