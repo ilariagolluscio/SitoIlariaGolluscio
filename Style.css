@@ -126,8 +126,10 @@ ul.ListaMenu{
 }
 
 .chiE{
-  font-family: 'Fuggles', cursive;
-  font-size: 7vw;
+  padding-top: 2%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 6vw;
+  margin:2%;
   color: rgba(173, 162, 154, 0.87);
   text-align: center;
   margin:0;
@@ -227,11 +229,12 @@ ul.ListaMenu{
 }
 
 .titolo{
-  font-family: 'Fuggles', cursive;
-  font-size: 7vw;
-  color: rgba(109, 90, 77, 0.87);
-  text-align: center;
-  margin:0;
+    padding-top: 2%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6vw;
+    text-align: center;
+    color: rgba(109, 90, 77, 0.87);
+    margin:0;
 }
 #Album table{
   padding-bottom:2%;
@@ -374,37 +377,40 @@ ul.ListaMenu{
   justify-content: center;
   background: linear-gradient(to bottom,rgba(75, 73, 72, 0.728), rgba(72, 70, 70, 0.801));
 }
-#Video h2 {
+#Video .chiE {
   color:antiquewhite;
   margin:0;
 }
 #list-container {
-  margin-left:2%;
-  margin-right:2%;
-  margin: 0 auto;
-  padding-bottom:5%;
+  margin: 2% auto;
+  padding-bottom: 5%;
   overflow-x: auto;
-  height: auto;
+  height: 100%; /* Modifica la altezza a 100% */
   width: 100%;
   overflow-y: hidden;
   scroll-behavior: smooth;
   display: flex;
-  text-align:center;
+  flex-direction: column; /* Imposta la direzione a "column" per centrare verticalmente */
+  text-align: center;
   align-items: center;
   justify-content: center;
-  order:2;
+  order: 2;
 }
 
 #list-container ul {
-  margin: 2%;
-  width: 90%;
+  padding-left: 0;
+  width: 100%; /* Estendi la larghezza a 100% */
   height: auto;
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0; /* Rimuovi il margin-bottom */
+  display: flex;
+  flex-wrap: nowrap; /* Imposta la non fasciazione in modo che gli elementi si estendano orizzontalmente */
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 #list-container ul li {
   padding: 0px;
@@ -616,6 +622,10 @@ footer p{
     width: auto;
     background-color: transparent;
   }
+  .chiE{
+    font-size: 8vw;
+  }
+
 
   #BloccoMenu {
     width: auto;
