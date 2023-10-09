@@ -461,7 +461,7 @@ ul.ListaMenu{
 }
 
 .ingrandito {
-  transform: scale(1.3);
+  transform: scale(1.4);
   padding: 2%;
   z-index: 1;
 }
