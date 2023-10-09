@@ -111,9 +111,10 @@ ul.ListaMenu{
   width: 100%;
   height: 100%;
   padding-top: 6%; 
-  background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941),rgba(176, 172, 172, 0.279));
+  /*background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941),rgba(176, 172, 172, 0.279));*/
   align-items: center;
   text-align:center;
+  background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(173, 154, 141),rgba(176, 172, 172, 0.279));
 }
 
 #bloccoSopra {
@@ -130,7 +131,7 @@ ul.ListaMenu{
   font-family: 'Great Vibes', cursive;
   font-size: 6vw;
   margin:2%;
-  color: rgba(173, 162, 154, 0.87);
+  color: #f7f6f2;
   text-align: center;
   margin:0;
 }
@@ -162,7 +163,7 @@ ul.ListaMenu{
   margin-top:0;
   margin-right:0;
   margin-bottom:auto;
-  color: rgb(100, 91, 85);
+  color: rgb(18, 17, 17);
   font-weight: bold;
 }
 
@@ -178,7 +179,7 @@ ul.ListaMenu{
   height: 100%;
   display: block;
   float: left; /* Cambia il float a sinistra invece di a destra */
-  filter: brightness(0.7);
+  filter: brightness(0.);
 }
 
 /*CSS per la sezione del documentario*/
@@ -190,7 +191,7 @@ ul.ListaMenu{
   padding-bottom: 2%;
   padding-top: 5%;
   overflow: auto;
-  background: linear-gradient(to bottom, rgba(176, 172, 172, 0.279), rgb(173, 154, 141));
+  background: linear-gradient(to bottom,#e8e4e4d4, rgb(173, 154, 141),rgba(61, 61, 61, 0.941));
 }
 
 #VideoDocumentario {
@@ -198,24 +199,32 @@ ul.ListaMenu{
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  height: auto; /* Imposta l'altezza su "auto" per adattarla al contenuto */
-  overflow: hidden; /* Nasconde il contenuto che sfora */
+  height: auto; 
+  overflow: hidden;
 }
 
 #videoDoc {
-  flex: 1; /* Usa flex per occupare lo spazio disponibile in modo proporzionale */
+  flex: 1; 
   margin-left: 2%;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
+}
+
+#videoDoc iframe{
+  width: 80%;
+  height: auto;
+  margin: 0;
+  padding:0;
 }
 
 #ParagrafoVideo {
-  flex: 1; /* Usa flex per occupare lo spazio disponibile in modo proporzionale */
+  flex: 1;
   padding: 1%;
   text-align: center;
   font-size: 20pt;
   margin-right: 2%;
-  color:#827268;
+  color:rgb(18, 17, 17);
 }
 
 
@@ -225,7 +234,7 @@ ul.ListaMenu{
   padding-bottom: 5%;
   height: auto;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(138, 124, 115),whitesmoke,rgba(78, 76, 75, 0.591));
+  background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(173, 154, 141), rgb(126, 113, 105),rgba(61, 61, 61, 0.941));
 }
 
 .titolo{
@@ -233,7 +242,7 @@ ul.ListaMenu{
     font-family: 'Great Vibes', cursive;
     font-size: 6vw;
     text-align: center;
-    color: rgba(109, 90, 77, 0.87);
+    color: #f7f6f2;
     margin:0;
 }
 #Album table{
@@ -253,12 +262,22 @@ ul.ListaMenu{
   text-align: center;
   max-width: 100%;
 }
+
 #ElencoAlbum td {
   width: 25%;
 }
 
+
+.TitoloAlbum{
+  color: #f7f6f2;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .allineamentoVerticale {  
-  color: rgb(18, 18, 18);  
+  color: #f7f6f2;
   vertical-align: top;
 }
 
@@ -266,6 +285,8 @@ ul.ListaMenu{
   margin-left: 2%;
   margin-right:2%;
   font-size: auto;
+  font-size: 15pt;
+  padding-bottom: 5%;
 }
 
 .immagine-container {
@@ -375,12 +396,18 @@ ul.ListaMenu{
   text-align:center;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom,rgba(75, 73, 72, 0.728), rgba(72, 70, 70, 0.801));
+  background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(173, 154, 141), rgb(126, 113, 105),rgba(61, 61, 61, 0.941));
+}
+#Video p{
+  color:#f7f6f2;
+  font-size: 20pt;
+  font-weight: bold;
 }
 #Video .chiE {
-  color:antiquewhite;
+  font-size: 40pt;
   margin:0;
 }
+
 #list-container {
   margin: 2% auto;
   padding-bottom: 5%;
@@ -423,7 +450,7 @@ ul.ListaMenu{
 }
 
 .cd:hover {
-  background-color: antiquewhite;
+  background-color: #f7f6f2;
   border-radius: 40%;
 }
 .cd {
@@ -461,13 +488,24 @@ ul.ListaMenu{
   width: 100%;
   height: auto;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(59, 58, 57, 0.591),rgba(25, 25, 25, 0.785));
+  background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(173, 154, 141), rgb(126, 113, 105),rgba(61, 61, 61, 0.941));
 }
 
 #TourItalia .titolo{
-  color:rgb(59, 58, 57);
+  color: #f7f6f2;
+  font-size: 30pt;
 }
 
+#anno{
+  font-size: 30pt;
+  color: #f7f6f2;
+}
+
+#TourItalia p,#TourItalia li{
+  font-weight: bold;
+  font-size: 15pt;
+  color: #f7f6f2;
+}
 #TourItalia p{
   margin:2%;
 }
@@ -514,7 +552,7 @@ ul.ListaMenu{
 }
 
 #dic{
-  border-left:2px solid rgb(68, 67, 67);
+  border-left:2px solid #f7f6f2;
 }
 
 #nov, #dic{

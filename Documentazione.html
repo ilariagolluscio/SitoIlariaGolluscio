@@ -21,23 +21,21 @@
 
   <style>
     #Documentazione {
-      color: whitesmoke;
+      color: #f7f6f2;
       font-size: 16pt;
       margin: 0;
       padding-top: 7%;
       padding-bottom: 5%;
-      background: linear-gradient(to bottom, rgba(59, 58, 57, 0.591), rgba(25, 25, 25, 0.785));
+      background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(173, 154, 141), rgb(126, 113, 105),rgba(61, 61, 61, 0.941));
       display: flex;
       flex-direction: column;
-      /* Per allineare i bottoni verticalmente */
       align-items: center;
-      /* Per centrare i bottoni orizzontalmente */
     }
 
     .chiE {
-      padding-top: 2%;
-     font-size: 6vw;
-      color: whitesmoke;
+      padding-top: 4%;
+      padding-bottom:4%;
+      font-size: 6vw;
     }
 
     .listasenza {
@@ -47,13 +45,16 @@
 
     #Documentazione ul {
       width: 80%;
-      margin:0;
-      margin-right: 2%;
+      margin-right: 2%;    
+    }
+
+    #Documentazione li {
+      padding-top: 1%;      
     }
 
     .button {
       border: none;
-      color: white;
+      color: #f7f6f2;
       width: 100%;
       margin: 2%;
       height: auto;
@@ -67,7 +68,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: transparent;
-      border: 2px solid black;
+      border: 2px solid rgba(61, 61, 61, 0.941);      
     }
 
     .button-text {
@@ -76,19 +77,24 @@
     }
 
     .button:hover {
-      background-color: rgba(52, 50, 50, 0.756);
-      color: white;
+      background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(107, 99, 94),rgba(61, 61, 61, 0.941));
+      color: #f7f6f2;
     }
 
     .rotated {
       transform: rotate(180deg);
     }
+    .colorBottom {
+      background: linear-gradient(to bottom,rgba(61, 61, 61, 0.941), rgb(107, 99, 94),rgba(61, 61, 61, 0.941));
+    }
 
     #abstract{
-      margin:10%;      
+      margin:10%;
+      margin-bottom: 5%;      
       margin-top: 2%;
-      text-align: justify;
+      text-align: center;
     }
+
     #Benchmarking,
     #LinguaggieStrumenti,
     #Strutturalayout,
@@ -98,7 +104,7 @@
     #promozione,
     #risultato {
       margin: 5%;
-      text-align: justify;
+      text-align: justify;  
     }
 
     #risultato blockquote{
@@ -166,9 +172,9 @@
     </section>
   </header>
 
-  <section id="Documentazione">
-    <p class="chiE">Abstract</p>
+  <section id="Documentazione">    
     <div id="abstract">
+      <p class="chiE">Abstract</p>
     <p>
       Questo sito presenta un compositore, pianista e discografico italiano di grande
       successo di nome Ludovico Einaudi. 
