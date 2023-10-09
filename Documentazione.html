@@ -1,69 +1,321 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-  <title> Documentazione Sito Ludovico Einaudi </title>
-
+  <title> Documentazione </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="Style.css">  
+  <link rel="stylesheet" href="Style.css">
   <script src="Script.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
+  
+  <style>
+    #Documentazione {
+      color: whitesmoke;
+      font-size: 16pt;
+      margin: 0;
+      padding-top: 7%;
+      padding-bottom: 5%;
+      background: linear-gradient(to bottom, rgba(59, 58, 57, 0.591), rgba(25, 25, 25, 0.785));
+      display: flex;
+      flex-direction: column; /* Per allineare i bottoni verticalmente */
+      align-items: center; /* Per centrare i bottoni orizzontalmente */
+    }
+    .chiE{
+      color:whitesmoke ;
+      font-size:30pt;
+    }
+    .listasenza{
+      list-style-type: none;
+      padding-left: 0;
+    }
+    #Documentazione ul{      
+      width: 80%;
+    }
 
+    .button {
+      border: none;
+      color: white;      
+      width: 100%;
+      margin: 2%;
+      height: auto;
+      padding: 15px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      border: 2px solid black;
+    }
+
+    .button-text {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: rgba(52, 50, 50, 0.756);
+      color: white;
+    }
+    .rotated{
+      transform: rotate(180deg);
+    }
+
+    #abstract,#Benchmarking,#LinguaggieStrumenti,#Strutturalayout,#Background,#obiettivicomunicativi,#Targetaudiencemessaggio,#promozione,#risultato{
+      margin:5%;
+      text-align: justify;
+    }
+
+
+
+  </style>
 </head>
+
 <body>
-    <header>
-        <section id="BloccoMenu">
-            <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
-            <nav>
-              <ul class="ListaMenu" id="ListaMenu">
-                <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
-                <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
-                <li><a onclick="vaiAPagina('Album.html')">Album</a></li>
-                <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
-                <li><a onclick="vaiAPagina('TourItalia.html')">Tour Italia</a></li>
-                <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
-                <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
-              </ul>
-            </nav>
-          </section>
-    </header>
-    
-    <section id="Documentazione">
-
+  <header>
+    <section id="BloccoMenu">
+      <img id="iconamenu" src="img/menu.png" alt="menu" onclick="mostramenu()">
+      <nav>
+        <ul class="ListaMenu" id="ListaMenu">
+          <li><a onclick="vaiAPagina('index.html#Home')">Home</a></li>
+          <li><a onclick="vaiAPagina('index.html#Biografia')">Biografia</a></li>
+          <li><a>Album</a></li>
+          <li><a onclick="vaiAPagina('Video.html')">Video</a></li>
+          <li><a onclick="vaiAPagina('TourItalia.html')">Tour Italia</a></li>
+          <li><a onclick="apriPagina('https://einaudistore.it')">Store</a></li>
+          <li><a onclick="scrollToSection('Contatti')">Contatti</a></li>
+        </ul>
+      </nav>
     </section>
+  </header>
 
-    <footer id="Contatti">
-        <section id="Firma">
-          <h2>Ludovico Einaudi</h2>
-        </section>
-        <section id="Social">
-          <ul>
-            <li><img id="Spotify" src="img/spotify.png"
-                onclick="apriPagina('https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj')"></li>
-            <li><img id="Twitter" src="img/twitter.png" onclick="apriPagina('https://twitter.com/LudovicoEinaud')"></li>
-            <li><img id="Facebook" src="img/facebook.png"
-                onclick="apriPagina('https://www.facebook.com/ludovicoeinaudi/')">
-            </li>
-            <li><img id="Instangram" src="img/instagram.png"
-                onclick="apriPagina('https://www.instagram.com/ludovico_einaudi/')"></li>
-            <li><img id="Youtube" src="img/Youtube.png"
-                onclick="apriPagina('https://www.youtube.com/channel/UCQxsahIsaO7_nDwVlFRMQiA')"></li>
-          </ul>
-        </section>
-        <div>
-          <p>2023 © Website created by Ilaria Golluscio</p>
+  <section id="Documentazione">
+    <h2 class="chiE">Abstract</h2>
+    <p id="abstract">
+      Questo sito presenta l'artista Ludovico Einaudi un compositore, pianista e discografico italiano di grande
+      successo, definito come l'uomo che calma il mondo in quanto, con le sue melodie, sa esprimenre sentimenti talmente
+      forti da influenzare lo stato d'animo di una persona, e sono proprio i sentimenti che vorrei far conoscere con
+      questo sito, a partire dai più piccoli fino ad arrivare ai più grandi. Il sito spiega ed illustra la bravura di
+      questo artista, mostrando i suoi successi, i suoi prossimi eventi e le informazioni essenziali per creare
+      curiosità.
+      Oltre al sito ho pensato di coinvolgere il pubblico anche su Instagram attraverso post interattivi, creando
+      un'audience interessata ai contenuti, promuovendo la consapevolezza e l'uso della musica classica come strumento
+      per trovare la propria pace.
+    </p>
+    <h2 class="chiE">Project Management Plan</h2>
+    <ul class="listasenza">
+      <li>
+        <button class="button" onclick="mostratesto('Benchmarking','rotateImage1')">
+          <span class="button-text">Benchmarking </span>
+          <img id="rotateImage1" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <p id="Benchmarking" style="display:none">
+
+          L'obiettivo di questo sito è quello di esaltare il suo pensiero e la sua idea di musica, tanto amata e speciale.
+          Fornendo contenuti sulla musica classica in modo originale, giovanile ma anche generazionale, unendo proposte del
+          vecchio e del nuovo secolo senza distinzioni.
+          Il sito mette a disposizione video e presentazioni di album con estratti audio offerta da Spotify, ma non solo,
+          questo sito offre anche la conoscenza dei prossimi eventi in italia e offre la possibilità di comprare bliglietti o
+          gadgets.
+          Questa pagina web è dedicata a tutti gli utenti appassionati alla musica classica di tutto il mondo, a chi non ne è
+          a conoscenza e vuole incominciare ad avere una cultura in merito, ed è dedicato anche a coloro che sono ricerca di
+          spensieratezza, pace e raffinatezza.
+      
+          I principali competitors riscontrati sul web sono:
+          Ludovico Einaudi Official Website: il sito ufficiale dedicato al cantante non presenta correttamente il soggetto, in
+          quanto non viene mai ufficialmente presentato e non espone la sua linea di pensiero e le caratteristiche di ogni
+          album.
+          Spotify e YouTube, due competitor che hanno come difetto le pubblicità, spesso molto rumorose, che pongono tra le
+          canzoni o nei video, recando disturbo a chi magari è in ricerca dell'opposto.
+      
+          Spotify è una piattaforma di streaming musicale che permette di ascoltare un brano e, contemporaneamente, leggerne
+          il testo;
+      
+          Wikipedia è un sito di divulgazione online gratuito che contiene tutte le informazioni su determinati argomenti;
+      
+          la pagina di Ludovico Einaudi è un sito che integra i servizi di streaming musicale, con le informazioni riassuntive
+          ed essenziali, e i servizi per contattare l'artista in un unico spazio.
+          </p>
+      </li>
+      <li>
+        <button class="button"  onclick="mostratesto('Strutturalayout','rotateImage2')">
+          <span class="button-text">Struttura e layout </span>
+          <img id="rotateImage2" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <div id="Strutturalayout" style="display:none">
+          <p>
+          
+        Il Sito è principalmente composta da una pagina principale la home composta da una foto dell'artista e il menu necessario per il movimento all'interno del sito web. 
+        Al livello sottostante abbiamo le seguenti pagine: 
+        <ul>
+          <li> Video.html che permette di scorrere e guardare video;</li>
+          <li> TourItalia.html che permette di entrare sul sito per comprare eventuali biglietti e guardare gli eventi;</li>
+          <li> La pagina dedicato allo Store;</li>
+          <li> Album.html che descrive i suoi album, i quali hanno un livello sottostante che consiste nelle specifiche pagine
+              sulle quali si possono ascoltare i brani relativi;</li>
+        </ul>
+    
+        La pagina principale è stata suddivisa in due parti: la home e il paragrafo sulla biografia che contiene le informaizozi principali del pianista;
+        Ad ogni pagina è presente il paragrafo Contatti che offre la possibilità di contattare l'artita tramite i suoi canali social e sulla quale si può accedere alla pagina Documentazione.html.
+        <img src="img/shcema.png" style="transform: rotate(90deg); width: 100px; height: auto; margin:2%;"> 
+          </p>
+        
+          <h3>LOOK AND FEEL</h3>
+          <p>
+            I tre font utilizzati all'interno del sito sono :
+        
+            SCRIVERE FONT
+    
+        Tutti loro hanno un design semplice che permette una lettura scorrevole ed agevole a tutti gli utenti, facilitando
+        la lettura e la comprensione delle funzioni in modo rapido e pulito.
+    
+        I colori principalmente utilizzati nelle pagine direttamente sottostante alla home, compresa essa, sono basati su una scala di grigi e rosa antico/beje ripresi dalle
+        immagini della biografia e della home.
+        A differenza delle pagine sopra elencate, le pagine relative ai singoli album sono state redatte sulle scale delle copertina dello specifo album. 
+        </p>
         </div>
-    </footer>
+    
+      </li>
+      <li>
+        <button class="button" onclick="mostratesto('LinguaggieStrumenti','rotateImage3')">
+          <span class="button-text">Linguaggi e strumenti</span>
+          <img id="rotateImage3" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <div id="LinguaggieStrumenti" style="display:none">
+          <p >Linguaggi:
+            <ul>
+            <li>HTML, per l'architettura della pagina</li>
+            <li>JavaScript, per le dinamiche di movimento degli elementi, in particolare per il paragrafo video e per la pagina</li>
+            <li>sevenDaysWalkingAlbum</li>
+            <li>CSS, per styling e animazione</li>
+          </ul>
+          </p>
+          <p>Strumenti:
+            <ul>
+              <li>Visual Studio Code, per la scrittura del codice</li>
+              <li>Ricerca google per le icone sociale e immagine png</li>
+              <li>spotify per le playlist degli album</li>
+              <li>Figma, per la creazione dei wireframe</li>
+              <li>Samsung Note per il diagramma ad albero</li>
+              <li>imagecolorpicker per la palette di colori</li>
+              <li>google font per le tipologie di scrittura</li>
+              <li>GitHub, per la pubblicazione</li>
+              <li>W3school, html.it altri esplicativi di html e css</li>
+            </ul>
+          </p>
+        </div>        
+      </li>
+    </ul> 
+    <h2 class="chiE">Communication Strategy</h2>
+    <ul class="listasenza">
+      <li>
+        <button class="button"  onclick="mostratesto('Background','rotateImage4')">
+          <span class="button-text">Background</span>
+          <img id="rotateImage4" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <p id="Background" style="display:none">
+          Questo sito punta sull'eleganza della grafica cercando di riportare la dolcezza, la morbidezza e la raffinatezza
+          della musica classica.
+      
+          Il bianco, il nero e il color rosa antico/sabbia sono prevalenti su tutti gli altri colori, in quanto, sono stati
+          scelti per enfatizzare maggiormente i riferimenti cromatici del piano e del pentagramma.
+      
+          Molti siti tendono promozione esclusiva dell'ultimo album, mentre questo sito parte dall'album più recente e arriva
+          al primo album composto dall'autore.
+        </p>
+      </li>
+      <li>
+        <button class="button" onclick="mostratesto('obiettivicomunicativi','rotateImage5')">
+          <span class="button-text">Obiettivi comunicativi</span>
+          <img id="rotateImage5" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <p id="obiettivicomunicativi" style="display:none">
 
+          In termini di comunicazione il sito offre una sezione per approfondire e diffondere la conoscenza ascoltando playlist
+          o guardando video,cercando di creare coinvolgere il più possibile l'utente. Inoltre vi è presente anche una sezione
+          che promuove la conoscenza, l'arte, gli eventi e i prodotti, cercando di fidelizzare gli utenti.
+    
+          Infine per raggiungere ulteriormente gli obbiettivi si è scelto di utilizzare Instagram, puntando sull'engagement
+          dei post.    
+        </p>
+      </li>
+      <li>
+        <button class="button" onclick="mostratesto('Targetaudiencemessaggio','rotateImage6')">
+          <span class="button-text">Target audience e messaggio</span>
+          <img id="rotateImage6" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <p id="Targetaudiencemessaggio" style="display:none">
+          Il target di Ludovico Einaudi sono gli amanti della musica classica e i suoi seguaci.
+    
+          Esiste ovviamente la presenza dell'utente casuale, che capita sul sito per ricercare informazioni, oppure cercando
+          brani privi di pubblicità o tramite il profilo Instagram e l'attività dello stesso.
+        </p>
+      </li>
+      <li>
+        <button class="button" onclick="mostratesto('promozione','rotateImage7')" >
+        <span class="button-text">Promozione</span>
+        <img id="rotateImage7" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>        
+        <p id="promozione" style="display:none">
+          La pagina sarà promossa attraverso la condivisione del link su gruppi Whatsapp,facebook e instagram, oltre alla
+          pubblicazione di contenuti Instagram sulla pagina ufficiale.
+        </p>
+      </li>
+      <li>
+        <button class="button" onclick="mostratesto('risultato','rotateImage8')">
+        <span class="button-text">Espolazione risultato</span>
+        <img id="rotateImage8" src="img/1492533499-arrow-26_83280.png" width="30px" height="auto">
+        </button>
+        <div id="risultato"></div>
+      </li>
+    </ul>
+
+  </section>
+  <script>
+    function mostratesto(testoid,idimg) {
+      var elemento = document.getElementById(testoid); 
+      if(elemento.style.display == 'block'){
+        elemento.style.display = 'none';
+      }
+      else{
+        elemento.style.display = 'block'; 
+      }
+      var image = document.getElementById(idimg);
+      image.classList.toggle('rotated');
+    }
+
+  </script>
+
+  <footer id="Contatti">
+    <section id="Firma">
+      <a>Ludovico Einaudi</a>
+    </section>
+    <section id="Social">
+      <ul>
+        <li><img id="Spotify" src="img/spotify.png"
+            onclick="apriPagina('https://open.spotify.com/artist/2uFUBdaVGtyMqckSeCl0Qj')"></li>
+        <li><img id="Twitter" src="img/twitter.png" onclick="apriPagina('https://twitter.com/LudovicoEinaud')"></li>
+        <li><img id="Facebook" src="img/facebook.png"
+            onclick="apriPagina('https://www.facebook.com/ludovicoeinaudi/')">
+        </li>
+        <li><img id="Instangram" src="img/instagram.png"
+            onclick="apriPagina('https://www.instagram.com/ludovico_einaudi/')"></li>
+        <li><img id="Youtube" src="img/Youtube.png"
+            onclick="apriPagina('https://www.youtube.com/channel/UCQxsahIsaO7_nDwVlFRMQiA')"></li>
+      </ul>
+    </section>
+    <div>
+      <a id="rifDoc" href="Documentazione.html"> Documentazione</a>
+      <p>2023 © Website created by Ilaria Golluscio</p>
+    </div>
+</footer>
 </body>
 </html>
-
