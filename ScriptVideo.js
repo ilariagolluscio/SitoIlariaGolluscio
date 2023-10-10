@@ -26,7 +26,9 @@
         if (clickedIndex !== undefined) {
 
           if (clickedIndex === 3) {
-            // Non fare nulla
+            let videoSrc = itemsArray[clickedIndex].match(/data-video-src="(.*?)"/)[1];
+            playVideo(videoSrc);
+            //non sposto elementi in quanto sono già al centro
           } else if (clickedIndex < 3) {
             pos = 3 - clickedIndex;
             let videoSrc = itemsArray[clickedIndex].match(/data-video-src="(.*?)"/)[1];
